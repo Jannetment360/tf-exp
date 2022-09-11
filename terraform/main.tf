@@ -51,7 +51,7 @@ depends_on = [google_service_account.service_account]
 # CloudSQL MySQL instance creation point-in-time-recovery.
 resource "google_sql_database_instance" "liveability-mysql" {
   name             = "mvp-liveability"
-  location         = "australia-southeast1"
+  region           = "australia-southeast1"
   database_version = "MYSQL_8_0"
   settings {
     #tier = "db-f1-micro"
