@@ -6,7 +6,7 @@ module "gcloud" {
 variable "gcp_region" {
   type        = string
   description = "Region of TF-EXP project execution"
-  default     = "Melbourne"
+  default     = "Sydney"
 }
 
 variable "gcp_zone" {
@@ -18,6 +18,7 @@ variable "gcp_zone" {
 variable "gcp_project" {
   type        = string
   description = "Project to use for this config"
+  default     = "tf-exp-project-362208"
 }
 
 variable "rolesList" {
